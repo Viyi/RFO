@@ -4,7 +4,7 @@
 [ext_resource path="res://sprites/run.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 14, 27 )
+extents = Vector2( 14, 24.4495 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Run"
@@ -32,7 +32,7 @@ shape = SubResource( 1 )
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="Run" type="Sprite" parent="Node2D"]
-position = Vector2( 0.27518, -2.1376 )
+position = Vector2( 1.22649, -1.89977 )
 texture = ExtResource( 2 )
 hframes = 8
 frame = 4

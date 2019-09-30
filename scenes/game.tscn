@@ -1,14 +1,22 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scripts/game.gd" type="Script" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/floor_obstacle.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/invis.tscn" type="PackedScene" id=5]
 
 [node name="Game Manager" type="Node2D"]
 script = ExtResource( 1 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 296.203, 322.266 )
+position = Vector2( 296.495, 298.031 )
 
 [node name="Floor" parent="." instance=ExtResource( 3 )]
-position = Vector2( 301.154, 376.343 )
+position = Vector2( 300, 350 )
+
+[node name="floor_obstacle" parent="." instance=ExtResource( 4 )]
+position = Vector2( 245.967, 349.016 )
+
+[node name="Node2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 303.617, 333.831 )
