@@ -19,6 +19,10 @@ config/name="RFO"
 run/main_scene="res://scenes/game.tscn"
 config/icon="res://icon.png"
 
+[editor_plugins]
+
+enabled=PoolStringArray( "pixijs_spritesheet_importer" )
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
